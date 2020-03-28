@@ -4,22 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Webpage</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>First Web Page</h1>
-    <p>Kindly do what you will see here as it will affect your score <br>
-        Whether it is your first webpage in life or not, use the heading above it won't bite..</p>
-    <h2>H2 Heading</h2>
-    <p>As a best practice, your webpage should have just one </p>
-    <p>element</p>
-    <h3>h3 Heading</h3>
-    <p>This test is too simple to fail. <br> It is simply a test of how much you have been following the course.</p>
-    <p>Thanks.. Wait.. <br> You will have to upload this picture to github.. Yea</p>
-    <h4>H4 Heading</h4>
-    <p>Use the file structure that will be shown below</p>
-    <pre>:::first_webpage:::</pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::index.html:::  </pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::style.css::: </pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::script.js::: </pre>
+<main role="main">
+    <section id="section-one">
+        <div class="container">
+            <div class="portlet">
+                <div class="card" style="background-color: blue;">
+                    <div class="card-1" style="background-color: rgb(106, 106, 133);">
+                        <form action="">
+                            <div class="form-group">
+                                <label for="enter_name">Enter Name</label>
+                                <input type="text" id="enter_name" placeholder="Enter Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="tracks">Select Track</label>
+                                <div name="tracks" id="tracks">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="courses">Select Courses</label>
+                                <div name="courses" id="courses">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-1" style="background-color: green;">
+                        <p id="name"> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</main>
+
+
+
+
+    <script src="./script.js"></script>
 </body>
 </html>
