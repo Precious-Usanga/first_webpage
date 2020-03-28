@@ -3,7 +3,6 @@ let selectTrack = document.getElementById('tracks');
 let courseList = document.getElementById('courses');
 let enter_name = document.getElementById('enter_name');
 
-
 enter_name.addEventListener('change', function(e) {
     e.preventDefault();
     let show_name = document.getElementById('name');
@@ -30,7 +29,7 @@ const tracks = [
     {
         name: 'Design',
         value: 'design',
-        courses: ['Design']
+        courses: ['Figma', 'Adobe XD']
     }
 ];
 let selected;
@@ -40,10 +39,6 @@ for(i=0; i<tracks.length; i++){
                                 <input type="checkbox" name="" id="${track.value}" value="${track.value}" onclick="selectedTrack('${track.value}')"> 
                                 ${track.name}
                              </label>`;
-
-                            //  selected = document.getElementById(`${track.value}`)
-    // let selected = document.getElementById(`${track.value}`);
-    // selected.setAttribute('selected', 'true');
 };
 let courseArray = [];
 var alreadySelected = [];
@@ -86,7 +81,7 @@ function selectedTrack(id){
                                                 <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}"> 
                                                 ${c}
                                             </label>`;
-                                            console.log(courseList.innerHTML);
+                                            // console.log(courseList.innerHTML);
                 });
                 alreadySelected.push(course.track);
                 console.log(alreadySelected);
@@ -103,7 +98,7 @@ function selectedTrack(id){
                                                             <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}"> 
                                                             ${c}
                                                         </label>`;
-                                                        console.log(courseList.innerHTML);
+                                                        // console.log(courseList.innerHTML);
                             });
                             alreadySelected.push(course.track);
                             // console.log(alreadySelected);
