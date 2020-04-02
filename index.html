@@ -13,7 +13,7 @@
             <div class="portlet">
                 <div class="card" style="background-color: blue;">
                     <div class="card-1" style="background-color: rgb(106, 106, 133);">
-                        <form action="">
+                        <form action="" >
                             <div class="form-group">
                                 <label for="enter_name">Enter Name</label>
                                 <input type="text" id="enter_name" placeholder="Enter Name">
@@ -28,20 +28,26 @@
                                 <div name="courses" id="courses">
                                 </div>
                             </div>
+                            <div class="form-group" onclick="formSubmitted()">
+                                <button type="button">SUBMIT</button>
+                            </div>
                         </form>
                     </div>
                     <div class="card-1" style="background-color: green;">
                         <p id="name"> </p>
+                        <div class="form-group displaySelectCourses" style="display:none;">
+                            <label class="" >Selected Courses</label>
+                            <div class="selectCourses">
+
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section> 
 </main>
-
-
-
-
     <script src="./script.js"></script>
 </body>
 </html>

@@ -78,7 +78,7 @@ function selectedTrack(id){
             courseArray.forEach(course => {
                 course.course.forEach(c => {
                     courseList.innerHTML += `<label for="${c.toLowerCase()}" class="${c.toLowerCase()}"> 
-                                                <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}"> 
+                                                <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}" onclick="selectedCourse('${c.toLowerCase()}')"> 
                                                 ${c}
                                             </label>`;
                                             // console.log(courseList.innerHTML);
@@ -94,8 +94,8 @@ function selectedTrack(id){
                     if (exist == false){
                         console.log(`${course.track} doesn't exist`);
                             course.course.forEach(c => {
-                                courseList.innerHTML += `<label for="${c.toLowerCase()}" class="${c.toLowerCase()}"> 
-                                                            <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}"> 
+                                courseList.innerHTML += `<label for="${c.toLowerCase()}" class="${c.toLowerCase()}" > 
+                                                            <input type="checkbox" name="" id="${c.toLowerCase()}" value="${c.toLowerCase()}" onclick="selectedCourse('${c.toLowerCase()}')"> 
                                                             ${c}
                                                         </label>`;
                                                         // console.log(courseList.innerHTML);
@@ -130,7 +130,30 @@ function selectedTrack(id){
         });
     }
 }
-
+let aSelectedCourse = [];
+function selectedCourse(id) {
+    if(aSelectedCourse.includes(id)){
+        let rId = aSelectedCourse.indexOf(id);
+        aSelectedCourse.splice(rId, 1);
+        console.log(aSelectedCourse);
+    } else {
+        aSelectedCourse.push(id);
+        console.log(aSelectedCourse);
+    }
+    
+};
+function formSubmitted() {
+    let div = document.querySelectorAll('div');
+    if (div.classLists.contains('displaySelectCourses')) {
+        div.classLists.contains('displaySelectCourses').style.display = 'block';
+    }
+    div.style.display = 'block';
+    let showCoursesArray = document.getElementsByClassName('selectCourses');
+    aSelectedCourse.forEach(selection => {
+        showCoursesArray.innerHTML += `<span class="label">${selection}</span>`
+    });
+    
+}
 // courses.forEach(course => {
 //     console.log(course);
 //     let li = document.createElement('li');
