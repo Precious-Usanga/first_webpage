@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Webpage</title>
+    <title>PiggyVest | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>First Web Page</h1>
-    <p>Kindly do what you will see here as it will affect your score <br>
-        Whether it is your first webpage in life or not, use the heading above it won't bite..</p>
-    <h2>H2 Heading</h2>
-    <p>As a best practice, your webpage should have just one </p>
-    <p>element</p>
-    <h3>h3 Heading</h3>
-    <p>This test is too simple to fail. <br> It is simply a test of how much you have been following the course.</p>
-    <p>Thanks.. Wait.. <br> You will have to upload this picture to github.. Yea</p>
-    <h4>H4 Heading</h4>
-    <p>Use the file structure that will be shown below</p>
-    <pre>:::first_webpage:::</pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::index.html:::  </pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::style.css::: </pre>
-    <pre>&nbsp; &nbsp; &nbsp; &nbsp; | </br>&nbsp; &nbsp; &nbsp; &nbsp; -------- :::script.js::: </pre>
+    <main>
+        <section id="section-1" class="bg-img">
+            <div class="container">
+                <div class="portlet">
+                    <div class="portlet-body">
+                        <div class="portlet-head">
+                            <a href="https://piggyvest.com"><img src="./assets/piggy_logo1.PNG" alt="PiggyVest Logo" width="200" style="color: green;"></a>
+                        </div>
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h1 class="bold text-blue">Create a Secure Account</h1>
+                                <p class="welcome-text text-gray">Welcome to the future of Savings & Investments</p>
+                            </div>
+                            
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="name" class="bold">Full Name</label>
+                                        <div>
+                                            <input type="text" name="name" id="name" placeholder="Full Name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="bold">Email Address</label>
+                                        <div>
+                                            <input type="email" name="email" id="email" placeholder="Email Address">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone" class="bold">Phone Number</label>
+                                        <div>
+                                            <input type="text" name="phone" id="phone" placeholder="Phone Number">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="bold">Password</label>
+                                        <div>
+                                            <input type="password" name="password" id="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="ref" class="bold">Referrer Phone or Promo Code (Optional)</label>
+                                        <div>
+                                            <input type="text" name="ref" id="ref" placeholder="Referrer Phone or Code">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="info" class="bold">How did you hear about us? (Optional)</label>
+                                        <div>
+                                            <select name="info" id="info">
+                                                <option class="option">Click To Select</option>
+                                                <option class="option">Facebook</option>
+                                                <option class="option">Twitter</option>
+                                                <option class="option">Instagram</option>
+                                                <option class="option">Friend/Family/Coworker Referral</option>
+                                                <option class="option">Google Search</option>
+                                                <option class="option">Google Playstore</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group text-center">
+                                        <button  name="" id="" class="btn text-white bold btn-block">Create Account</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="footer text-center">
+                            <p class="footer-text"><a class="text-white" href="https://dashboard.piggyvest.com/login">Already have an account? Log In</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

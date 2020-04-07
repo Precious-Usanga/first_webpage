@@ -1,0 +1,114 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bg-img {
+    background: url('./assets/bg-img.PNG');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    margin: 0px 120px;
+}
+.portlet {
+    display: flex;
+    justify-content: center;
+}
+.portlet-body {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+    padding: 1rem;
+}
+.portlet-head {
+    margin: 2rem;
+    text-align: center;
+}
+.card {
+    margin: 1rem 0px;
+    background-color: #fff;
+    border-radius: 25px 25px 25px 0px;
+    padding: 2rem;
+}
+.text-blue {
+    color: #083e9e;
+}
+.text-gray {
+    color: #4a5568;
+}
+.text-white {
+    color: #fff;
+}
+.welcome-text {
+    font-size: .875rem;
+    line-height: 0px;
+}
+.card-header {
+    padding: .5rem 1rem 1rem 1rem;
+}
+.form-group {
+    margin: 5px 0px;
+    padding: 1rem;
+}
+label {
+    color: #4a5568;
+    font-size: .75rem;
+    margin-bottom: 10px;
+}
+input, select {
+    -webkit-appearance: none; 
+  appearance: none;
+    padding: 1rem;
+    width: 90%;
+    border: 0px solid #e2e8f0;
+    border-radius: .25rem;
+    background-color: #EDF2F7;
+    font-size: 1rem;
+}
+input::placeholder {
+    font-size: 1rem;
+    color: rgb(206, 206, 206);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+input:focus, input:enabled, input:active, input:focus-visible, input:focus-within {
+    border: 0px solid #e2e8f0;
+}
+select {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.bold {
+    font-weight: 700;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    border-radius: 13px 13px 13px 0px;
+    border: 0px solid #fff;
+    background-color: rgb(8, 62, 158);
+}
+.btn-block{
+    display: block;
+    width: 100%;
+}
+.round {
+    border-radius: 15px;
+}
+.footer {
+    padding: .5rem;
+    margin: .5rem;
+}
+.footer-text > a:hover {
+    color: rgb(179, 179, 179);
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
