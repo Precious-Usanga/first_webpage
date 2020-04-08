@@ -1,7 +1,7 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Karla', sans-serif;
 }
 .bg-img {
     background: url('./assets/bg-img.PNG');
@@ -20,11 +20,11 @@ body {
 .portlet-body {
     display: flex;
     flex-direction: column;
-    width: 440px;
+    width: 28rem;
     padding: 1rem;
 }
 .portlet-head {
-    margin: 2rem;
+    margin: 1.7rem;
     text-align: center;
 }
 .card {
@@ -32,6 +32,7 @@ body {
     background-color: #fff;
     border-radius: 25px 25px 25px 0px;
     padding: 2rem;
+    overflow: auto;
 }
 .text-blue {
     color: #083e9e;
@@ -42,42 +43,51 @@ body {
 .text-white {
     color: #fff;
 }
+h1.h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
 .welcome-text {
     font-size: .875rem;
-    line-height: 0px;
+    margin-top: -10px;
 }
 .card-header {
-    padding: .5rem 1rem 1rem 1rem;
+    padding: 0px 1rem .5rem 1rem;
 }
 .form-group {
-    margin: 5px 0px;
     padding: 1rem;
 }
 label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #4a5568;
     font-size: .75rem;
-    margin-bottom: 10px;
+    line-height: 2;
+    margin-bottom: .25rem;
 }
 input, select {
-    -webkit-appearance: none; 
-  appearance: none;
+    color: #1a202c;
     padding: 1rem;
     width: 90%;
     border: 0px solid #e2e8f0;
     border-radius: .25rem;
-    background-color: #EDF2F7;
+    background-color: #edF2F7;
     font-size: 1rem;
+    outline: none;
+    font-family: 'Karla', sans-serif;
 }
 input::placeholder {
     font-size: 1rem;
-    color: rgb(206, 206, 206);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(168, 167, 167);font-family: 'Karla', sans-serif;
 }
 input:focus, input:enabled, input:active, input:focus-visible, input:focus-within {
-    border: 0px solid #e2e8f0;
+    border: 0px solid none;
+    border-color: none;
 }
 select {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100%;
+    border-radius: 13px;
+    font-family: 'Karla', sans-serif;
 }
 .bold {
     font-weight: 700;
@@ -88,11 +98,13 @@ select {
 .btn {
     padding: 1rem;
     font-size: 1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;text-transform: uppercase;
     border-radius: 13px 13px 13px 0px;
     border: 0px solid #fff;
     background-color: rgb(8, 62, 158);
+}
+.btn:hover {
+    background-color: rgb(6, 43, 111);
 }
 .btn-block{
     display: block;
