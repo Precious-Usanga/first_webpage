@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PiggyVest | Dashboard</title>
+    <title>JS Task</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./assets/favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -14,75 +12,29 @@
             <div class="container">
                 <div class="portlet">
                     <div class="portlet-body">
-                        <div class="portlet-head">
-                            <a href="https://piggyvest.com"><img src="./assets/piggy_logo1.PNG" alt="PiggyVest Logo" width="200" class="w-sm"></a>
-                        </div>
                         <div class="card">
                             <div class="card-header text-center">
-                                <h1 class="h1 bold text-blue">Create a Secure Account</h1>
-                                <p class="welcome-text text-gray">Welcome to the future of Savings & Investments</p>
+                                <h1 class="h1 bold text-blue name"></h1>
+                                <h5 class="courseTag"></h5>
+                                <p class="welcome-text text-gray courses"></p>
                             </div>
-                            
                             <div class="card-body">
                                 <form>
                                     <div class="form-group">
-                                        <label for="name" class="bold">Full Name</label>
+                                        <label for="showNumbs" class="showNumbLabel bold"></label>
                                         <div>
-                                            <input type="text" name="name" id="name" placeholder="Full Name">
+                                            <textarea name="showNumbs" class="showNums" cols="30" rows="10"></textarea>
                                         </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="email" class="bold">Email Address</label>
-                                        <div>
-                                            <input type="email" name="email" id="email" placeholder="Email Address">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="phone" class="bold">Phone Number</label>
-                                        <div>
-                                            <input type="text" name="phone" id="phone" placeholder="Phone Number">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password" class="bold">Password</label>
-                                        <div>
-                                            <input type="password" name="password" id="password" placeholder="Password">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="ref" class="bold">Referrer Phone or Promo Code (Optional)</label>
-                                        <div>
-                                            <input type="text" name="ref" id="ref" placeholder="Referrer Phone or Code">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="info" class="bold">How Did You Hear About Us? (Optional)</label>
-                                        <div>
-                                            <select name="info" id="info">
-                                                <option class="option">Click To Select</option>
-                                                <option class="option">Facebook</option>
-                                                <option class="option">Twitter</option>
-                                                <option class="option">Instagram</option>
-                                                <option class="option">Friend/Family/Coworker Referral</option>
-                                                <option class="option">Google Search</option>
-                                                <option class="option">Google Playstore</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="form-group text-center">
-                                        <button  name="" id="" class="btn text-white bold btn-block">Create Account</button>
                                     </div>
                                 </form>
                             </div>
-                        </div>
-                        <div class="footer text-center">
-                            <p class="footer-text"><a class="text-white" href="https://dashboard.piggyvest.com/login">Already have an account? Log In</a></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>

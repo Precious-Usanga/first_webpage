@@ -1,14 +1,15 @@
 body {
     padding: 0px;
     margin: 0px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .bg-img {
-    background: url('./assets/bg-img.PNG');
+    background-color: #ADD8E6;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 100vh;
 }
 .container {
     margin: 0px 120px;
@@ -16,16 +17,14 @@ body {
 .portlet {
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .portlet-body {
     display: flex;
-    flex-direction: column;
+    align-items: center;
     width: 28rem;
     padding: 1rem;
-}
-.portlet-head {
-    margin: 1.7rem;
-    text-align: center;
 }
 .card {
     margin: 1rem 0px;
@@ -37,14 +36,7 @@ body {
 .text-blue {
     color: #083e9e;
 }
-.text-gray {
-    color: #4a5568;
-}
-.text-white {
-    color: #fff;
-}
 h1.h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 700;
     line-height: 1;
 }
@@ -59,13 +51,12 @@ h1.h1 {
     padding: 1rem;
 }
 label {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #4a5568;
     font-size: .75rem;
     line-height: 2;
     margin-bottom: .25rem;
 }
-input, select {
+textarea {
     color: #1a202c;
     padding: 1rem;
     width: 90%;
@@ -74,20 +65,7 @@ input, select {
     background-color: #edF2F7;
     font-size: 1rem;
     outline: none;
-    font-family: 'Karla', sans-serif;
-}
-input::placeholder {
-    font-size: 1rem;
-    color: rgb(168, 167, 167);font-family: 'Karla', sans-serif;
-}
-input:focus, input:enabled, input:active, input:focus-visible, input:focus-within {
-    border: 0px solid none;
-    border-color: none;
-}
-select {
-    width: 100%;
-    border-radius: 13px;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .bold {
     font-weight: 700;
@@ -95,80 +73,12 @@ select {
 .text-center {
     text-align: center;
 }
-.btn {
-    padding: 1rem;
-    font-size: 1rem;
-    font-family: 'Karla', sans-serif;text-transform: uppercase;
-    border-radius: 13px 13px 13px 0px;
-    border: 0px solid #fff;
-    background-color: rgb(8, 62, 158);
-}
-.btn:hover {
-    background-color: rgb(6, 43, 111);
-}
-.btn-block{
-    display: block;
-    width: 100%;
-}
+
 .round {
     border-radius: 15px;
 }
-.footer {
-    padding: .5rem;
-    margin: .5rem;
-}
-.footer-text > a:hover {
-    color: rgb(179, 179, 179);
-}
+
 a {
     text-decoration: none;
     cursor: pointer;
-}
-
-@media screen and (max-width: 710px) {
-    .container {
-        margin: 0px 20px;
-    }
-    .portlet-body {
-        width: 440px;
-    }
-}
-@media screen and (max-width: 508px) {
-    .container {
-        margin: 0px 10px;
-    }
-    .portlet-body {
-        width: 90%;
-    }
-    h1.h1{
-        font-size: 1.5rem;
-    }
-    .welcome-text {
-        font-size: .87rem;
-    }
-}
-@media screen and (max-width: 475px) {
-    .container {
-        margin: 0px 5px;
-    }
-    .portlet-body {
-        width: 100%;
-    }
-    .card-header {
-        padding: 0px .5rem .5rem .5rem;
-    }
-    .card{
-        padding: 1rem;
-    }
-    h1.h1{
-        font-size: 1.2rem;
-    }
-}
-@media screen and (max-width: 298px) {
-    .portlet-head {
-        margin: 1.7rem 5px;
-    }
-    a > img.w-sm {
-        width: 80%;
-    }
 }
