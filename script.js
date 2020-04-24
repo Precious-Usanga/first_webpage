@@ -19,29 +19,29 @@ function calculate_divisibilty(num){
     let numbArray = [];
     if(!isNaN(num)){
         for(i = 1; i <= num; i++) {
-            let k = '';
+            let newNumb = '';
             
             if(i%2 == 0) {
-                let k = 'yu';
+                let newNumb = 'yu';
                 if(i%3 == 0) {
-                    k += `-gi`;
+                    newNumb += `-gi`;
                 }
                 if(i%5 == 0) {
-                    k += `-oh`;
+                    newNumb += `-oh`;
                 }
-                numbArray.push(k);
+                numbArray.push(newNumb);
             } else if(i%3 == 0) {
-                let k = 'gi';
+                let newNumb = 'gi';
                 if(i%5 == 0) {
-                    k += `-oh`;
+                    newNumb += `-oh`;
                 }
-                numbArray.push(k);
+                numbArray.push(newNumb);
             } else if(i%5 == 0) {
-                let k = 'oh';
-                numbArray.push(k);
+                let newNumb = 'oh';
+                numbArray.push(newNumb);
             } else {
-                let k = i;
-                numbArray.push(k);
+                let newNumb = i;
+                numbArray.push(newNumb);
             }
     
         }
