@@ -1,62 +1,38 @@
-const name = 'Precious Usanga';
-console.log(`name is = ${name}`);
+let data = [
+    {principal: 2500, time: 1.8},
+    {principal: 1000, time: 5},
+    {principal: 3000, time: 1},
+    {principal: 2000, time: 3}
+];
 
+let calc_interest = function (principal, rate, time) {
+    let interest = (principal * rate * time)/100;
+    return {principal: principal, rate: rate, time: time, interest:  interest};
+}
 
-const nameSelector = document.getElementsByClassName('name');
-nameSelector[0].innerHTML = name;
-const courseTag = document.getElementsByClassName('courseTag');
-courseTag[0].style.bold = '700';
-courseTag[0].innerHTML = 'WELCOME! Please Enter a Number';
-
-const showNumbLabel = document.getElementsByClassName('showNumbLabel');
-const showNums = document.getElementsByClassName('showNums');
-showNums[0].style.textAlign = 'justify';
-showNums[0].style.lineHeight = '1.5'
-showNumbLabel[0].innerHTML = 'Output Array';
-const enterNums = document.getElementById('enterNums');
-
-function calculate_divisibilty(num){
-    let numbArray = [];
-    if(!isNaN(num)){
-        for(i = 1; i <= num; i++) {
-            let newNumb = '';
-            
-            if(i%2 == 0) {
-                let newNumb = 'yu';
-                if(i%3 == 0) {
-                    newNumb += `-gi`;
-                }
-                if(i%5 == 0) {
-                    newNumb += `-oh`;
-                }
-                numbArray.push(newNumb);
-            } else if(i%3 == 0) {
-                let newNumb = 'gi';
-                if(i%5 == 0) {
-                    newNumb += `-oh`;
-                }
-                numbArray.push(newNumb);
-            } else if(i%5 == 0) {
-                let newNumb = 'oh';
-                numbArray.push(newNumb);
-            } else {
-                let newNumb = i;
-                numbArray.push(newNumb);
-            }
-    
+function interestCalculator(arr) {
+    let interestData = [];
+    arr.forEach(element => {
+        if(element.principal >= 2500 && (element.time > 1 && element.time < 3)) {
+            let rate = 1;
+            let calc = calc_interest(element.principal, element.time, rate);
+            interestData.push(calc);
+        } else if(element.principal >= 2500 && element.time >= 3) {
+            let rate = 4;
+            let calc = calc_interest(element.principal, element.time, rate);
+            interestData.push(calc);
+        } else if(element.principal < 2500 || element.time <= 1) {
+            let rate = 2;
+            let calc = calc_interest(element.principal, element.time, rate);
+            interestData.push(calc);
+        } else {
+            let rate = 1;
+            let calc = calc_interest(element.principal, element.time, rate);
+            interestData.push(calc);
         }
-        return numbArray;
-    } else {
-        return `${num} is not a number`;
-    }
-};
+    });
+    console.log(interestData);
+    return interestData;
+}
 
-enterNums.addEventListener('change', function(){
-    let input = enterNums.value
-    let output = calculate_divisibilty(input);
-    showNums[0].innerHTML = `${output}`;
-});
-
-console.log(calculate_divisibilty(100));
-console.log(calculate_divisibilty(20));
-console.log(calculate_divisibilty('a'));
+interestCalculator(data);
